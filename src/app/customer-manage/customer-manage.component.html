@@ -1,0 +1,26 @@
+
+<div id="update">
+<button class='dropdown-button btn'  data-activates='dropdown1'>Select Id</button>
+
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+   
+    <li *ngFor="let id of allCustomerItems" (click)="selectItem(id)">{{id}}</li>
+
+  </ul>
+
+           <div class="input-field col s6">
+          <i class="material-icons prefix">group_work</i>
+          <input id="changedValue" type="text" name="changedValue" [(ngModel)]="changedValue" class="validate">
+          <label>Value </label>
+        </div>
+
+
+
+
+
+      <button class="modal-action modal-close waves-effect waves-green btn-flat" (click)="updateCustomer(changedValue,selectedItemToUpdate)">Save</button>
+      <button class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</button>
+    
+  </div>  

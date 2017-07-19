@@ -1,0 +1,19 @@
+<div class="row">
+        <div class="col s6 m3" *ngFor="let product of productsToBeDisplayed">
+          <div class="card" >
+            <div class="card-image">
+              <img src={{product.productImage}}  style="width:250px;height:250px;" (click) = "passThisProduct(product)">
+              <span class="card-title">{{product.productName}}</span>
+            </div>
+            <div class="card-content">
+              <p>{{product.productLongDescription}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">{{product.productBrand}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+

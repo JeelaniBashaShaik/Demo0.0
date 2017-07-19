@@ -1,0 +1,114 @@
+
+<a class="modal-trigger waves-effect waves-light btn" href="#modal1">SignUp</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Register Yourself</h4>
+     
+     <div class="row">
+    <form class="col s12">
+      
+      <div class="row">
+        <div class="input-field col s4">
+          <input  id="fullName" type="text" class="validate" [(ngModel)] = "customerToBeAdded.fullName" name="fullName" >
+          <label for="fullName">Full Name</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="displayName" type="text" class="validate" name="displayName" [(ngModel)]="customerToBeAdded.displayName">
+          <label for="displayName">Display Name</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="password" type="password" class="validate" name="password" [(ngModel)]="customerToBeAdded.password">
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+ <div class="row">
+        <div class="input-field col s6">
+          <input  id="email" name="email" type="email" [(ngModel)]="customerToBeAdded.email" class="validate">
+          <label for="email">Email Address</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input id="phoneNumber" type="text" name="phoneNumber" [(ngModel)]="customerToBeAdded.phoneNumber" class="validate">
+          <label for="phoneNumber">Phone Number</label>
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="flat_HouseNo" name="flat_HouseNo" type="text" [(ngModel)]="customerToBeAdded.address.flat_HouseNo" class="validate">
+          <label for="email">Flat/HouseNo</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input id="street" type="text" name="street" [(ngModel)]="customerToBeAdded.address.street" class="validate">
+          <label for="street">Street</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s4">
+          <input  id="city" name="city" type="text" [(ngModel)]="customerToBeAdded.address.city" class="validate">
+          <label for="city">City</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="pincode" type="text" name="pincode" [(ngModel)]="customerToBeAdded.address.pincode" class="validate">
+          <label for="pincode">PinCode</label>
+        </div>
+     
+
+      <div class="input-field col s4">
+          <input id="state" type="text" name="state" [(ngModel)]="customerToBeAdded.address.state" class="validate">
+          <label for="state">State</label>
+        </div>
+      
+ </div>
+    </form>
+  </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn-flat" (click)="addCustomer()">Save</button>
+    </div>
+  </div>
+
+  <!-- Modal Trigger -->
+  <a class="modal-trigger waves-effect waves-light btn" href="#modal2">Login</a>
+
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal modal-fixed-footer" style="height:59% !important" >
+    <div class="modal-content">
+      <h4>Login</h4>
+      
+<div class="row">
+    <form class="col s12">
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="loginId" type="text" class="validate" [(ngModel)]="loginId" name="loginId">
+          <label for="loginId">LoginID</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="password" type="password" class="validate" name="loginPassword" [(ngModel)]="loginPassword">
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn-flat" (click)="authorize()">Login</button>
+    </div>
+  </div>
+
+ 

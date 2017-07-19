@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+ <link rel="import" href="1.5.0-vaadinGrid.html">
+
+</head>
+
+
+
+<body>
+<vaadin-grid id="grid-function-source">
+            <table>
+              <colgroup>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Value</th>
+                  <th>Progress</th>
+                </tr>
+              </thead>
+            </table>
+          </vaadin-grid>
+          <script>
+            var data = [
+              ['Project A', 10000, 0.8],
+              ['Project B', 87654, 0.2],
+              ['Project C', 12999, 0.6]
+            ];
+
+            var grid = document.getElementById('grid-function-source');
+            grid.items = function(params, callback) {
+              callback(data.slice(params.index, params.index + params.count));
+            };
+            grid.size = data.length;
+          </script>
+</body>
+
+</html>

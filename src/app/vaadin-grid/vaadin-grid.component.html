@@ -1,0 +1,16 @@
+
+  <vaadin-grid id="grid2" [(items)]="users" selection-mode="multi"  (selected-items-changed)="onSelectedUsersChanged($event)" column-reordering-allowed="" frozen-columns="0">
+      <table>
+        <colgroup>
+          <col name="productId" sortable>
+          <col name="productCurrentPrice" sortable>
+          <col name="productCategory" sortable>
+          <col name="timeSpentViewing" sortable>
+          <col name="productWishes" sortable>
+          <col name="productRating" sortable>
+          <col name="productBrand" sortable>
+
+        </colgroup>
+  </table>
+    </vaadin-grid>
+

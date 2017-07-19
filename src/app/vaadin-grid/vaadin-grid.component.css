@@ -1,0 +1,13 @@
+ vaadin-grid {
+      height: 70%;
+      width:50%
+    }
+
+    .modal-content{
+      width:50%;
+    }
+
+    #grid2{
+      width:100%;
+    }
+    

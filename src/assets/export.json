@@ -1,0 +1,35 @@
+{
+  "-KjiY5dZpsez6vhCKQUD" : {
+    "productBrand" : "Motorola",
+    "productCategory" : "Mobile Phones",
+		"productImage":"assets/motorola.png",
+    "productCurrentPrice" : "8499",
+    "productFeatures" : "16GB, 2GB, Turbo Charging",
+    "productId" : "AB12",
+    "productLongDescription" : "Sleek Design, metal framework",
+    "productPriceArray" : "8999,8799,9200",
+    "productShortDescription" : "camera, mp3"
+  },
+  "-KjiaN0ftd9S4C1A8PX5" : {
+    "productBrand" : "ClassMate",
+    "productCategory" : "Notebooks",
+		"productImage":"assets/classmate.jpg",
+    "productCurrentPrice" : "40",
+    "productFeatures" : "Unruled, Long, HardCover",
+    "productId" : "CD34",
+    "productLongDescription" : "useful for kids",
+    "productPriceArray" : "39,42,40,41",
+    "productShortDescription" : "Smells nice"
+  },
+  "-KjxQsALuzfackUWDR-i" : {
+    "productBrand" : "Axe",
+    "productCategory" : "Deodrants",
+		"productImage":"assets/axe.jpg",
+    "productCurrentPrice" : "12030",
+    "productFeatures" : "150ml",
+    "productId" : "MN69",
+    "productLongDescription" : "attracts woman",
+    "productPri" : "12,14,15",
+    "productShortDescription" : "good Smell"
+  }
+}
